@@ -24,7 +24,7 @@ sharememory 分别有基于sysv实现和基于mmap的实现,但只是使用了mm
 
 ### 内存结构
 
-| swShareMemory | t_mem(真正返回的内存地址) |
+| swShareMemory | t_mem(真正返回的内存地址) |<br>
 使用 sw_shm_malloc 返回的是共享内存首地址+swShareMemory占用大小的偏移量，calloc同理。
 
 ```c
