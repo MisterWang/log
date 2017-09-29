@@ -1,5 +1,5 @@
 ## vim
 
-[开启python支持](python_sup.md)
+[编译参数](make.md)
 
 [插件列表](vim_plugins.md)
