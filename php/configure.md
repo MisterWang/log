@@ -1,3 +1,6 @@
+# configure 
+
+```shell
 ./configure \
 --prefix=/usr/local/php-$phpversion \
 --with-config-file-path=/usr/local/php-$phpversion/etc \
@@ -34,3 +37,4 @@
 
 #--with-xpm-dir \
 #--with-mcrypt \
+```
