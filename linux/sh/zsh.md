@@ -1,6 +1,8 @@
 # zsh
 
-## windows下配置oh-my-zsh卡顿(cygwin,msys2,babun等...)
+## oh my zsh
+
+### windows下配置oh-my-zsh卡顿(cygwin,msys2,babun等...)
 主要是在theme中搜集git信息是耗费的时间较多
 
 尝试隐藏git是否更改的信息
