@@ -1,7 +1,7 @@
 # win7
 
-## 某些软件报d3dcompiler_47.dll错误
-下载更新解决
+## 某些软件报 d3dcompiler_47.dll缺失 错误
+下载更新补丁解决
 
 [补丁地址](https://support.microsoft.com/en-us/help/4020302)
 
