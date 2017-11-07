@@ -1,6 +1,6 @@
 # gulp
 
-##　一个示例
+## 一个示例
 ```js
 var gulp = require('gulp');
 var concat = require('gulp-concat');
