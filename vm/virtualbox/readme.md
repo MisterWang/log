@@ -8,5 +8,6 @@
 ```nginx
 sendfile off;
 ```
-TODO 了解sendfile
+TODO SEDNFILE
 [ss](https://www.vagrantup.com/docs/synced-folders/virtualbox.html)
+[issue](https://github.com/hashicorp/vagrant/issues/351#issuecomment-1339640)
