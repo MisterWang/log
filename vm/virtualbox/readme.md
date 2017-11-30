@@ -9,5 +9,10 @@
 sendfile off;
 ```
 TODO SEDNFILE
-[ss](https://www.vagrantup.com/docs/synced-folders/virtualbox.html)
+
+[vagrant](https://www.vagrantup.com/docs/synced-folders/virtualbox.html)
 [issue](https://github.com/hashicorp/vagrant/issues/351#issuecomment-1339640)
+
+[参考](https://qiita.com/liubin/items/c2d39ef63a44bb3c2d66)
+
+[最早出现在10年前](https://www.virtualbox.org/ticket/81)
