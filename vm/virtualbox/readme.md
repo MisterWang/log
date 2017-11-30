@@ -9,3 +9,4 @@
 sendfile off;
 ```
 TODO 了解sendfile
+[ss](https://www.vagrantup.com/docs/synced-folders/virtualbox.html)
