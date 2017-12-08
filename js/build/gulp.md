@@ -3,8 +3,8 @@
 ## 一个示例
 ```js
 var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');//合并
+var uglify = require('gulp-uglify');//压缩
 var runSequence = require('run-sequence');
 
 
