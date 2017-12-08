@@ -1,6 +1,6 @@
 # indexdb.md
 
-## 简单封装
+## 简单封装(似乎和promise有冲突,//TODO)
 ```js
 function IDBCon(cb) {
     this.db;
