@@ -1,7 +1,7 @@
 # indexdb.md
 
 ## 简单封装
-```
+```js
 function IDBCon(cb) {
     this.db;
     this.dbname = 'mystars';
