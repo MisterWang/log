@@ -31,3 +31,5 @@ gulp.task('compile', function() {
         .pipe(gulp.dest('src/js'));
 });
 ```
+
+## 与webpack集成
