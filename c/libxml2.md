@@ -31,6 +31,15 @@ struct _xmlEntity {
 ```
 
 ## xmlNode
+xml树结构为:
+0 
+| \
+|  \ 
+0-0-0
+|\
+0-0
+每个节点有两个指针分别指向子节点链表的头和尾，另外有两个指针分别指向当前链表的前驱节点和后驱节点
+
 ```c
 struct _xmlNode {
     void           *_private;	/* application data */
