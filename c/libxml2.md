@@ -29,3 +29,27 @@ struct _xmlEntity {
 					 * and if it contains '<' */
 };
 ```
+
+## xmlNode
+```c
+struct _xmlNode {
+    void           *_private;	/* application data */
+    xmlElementType   type;	/* type number, must be second ! */
+    const xmlChar   *name;      /* the name of the node, or the entity */
+    struct _xmlNode *children;	/* parent->childs link */
+    struct _xmlNode *last;	/* last child link */
+    struct _xmlNode *parent;	/* child->parent link */
+    struct _xmlNode *next;	/* next sibling link  */
+    struct _xmlNode *prev;	/* previous sibling link  */
+    struct _xmlDoc  *doc;	/* the containing document */
+
+    /* End of common part */
+    xmlNs           *ns;        /* pointer to the associated namespace */
+    xmlChar         *content;   /* the content */
+    struct _xmlAttr *properties;/* properties list */
+    xmlNs           *nsDef;     /* namespace definitions on this node */
+    void            *psvi;	/* for type/PSVI informations */
+    unsigned short   line;	/* line number */
+    unsigned short   extra;	/* extra data for XPath/XSLT */
+};
+```
