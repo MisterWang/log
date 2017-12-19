@@ -1,6 +1,14 @@
 # docker
 [具体查看](https://github.com/MisterWang/docker)
 
+[参考](https://blog.lab99.org/post/docker-2016-07-14-faq.html)
+
+## 安装
+```shell
+export CHANNEL=stable
+curl -fsSL https://get.docker.com/ | sh -s -- --mirror Aliyun
+```
+
 ## docker 删除所有容器
 ```shell
 docker stop $(docker ps -q) & docker rm $(docker ps -aq)
