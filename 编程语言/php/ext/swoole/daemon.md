@@ -1,5 +1,9 @@
 # daemon
 
+```m4
+AC_CHECK_LIB(c, daemon, AC_DEFINE(HAVE_DAEMON, 1, [have daemon]))
+```
+
 ```c
 #ifndef HAVE_DAEMON
 int daemon(int nochdir, int noclose)
