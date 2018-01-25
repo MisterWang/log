@@ -2,7 +2,7 @@
 ```php
 class MyRecord extends ActiveRecord implements JsonSerializable{
   public function jsonSerialize(){
-      $array=$this->getAttributes();
+      $array=$this->getAttributes($this->fields());
       $relate=$this->getRelatedRecords();
       return $array+$relate;  
  }
@@ -39,7 +39,10 @@ if (is_object($data)) {
 在接口
 * JsExpression
 * JsonSerializable
+* Arrayable
 * SimpleXMLElement
 * Iterator
 
-中，JsonSerializable只需实现一个方法...
+中，JsonSerializable只需实现一个方法...或者重写ArrayableTrait的toArray方法？
+
+结论还是实现JsonSerializable简单...
