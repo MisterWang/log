@@ -1,6 +1,6 @@
 实现JsonSerializable接口
 ```php
-class MyRecord extends ActivityRecord implements JsonSerializable{
+class MyRecord extends ActiveRecord implements JsonSerializable{
   public function jsonSerialize(){
       $array=$this->getAttributes();
       $relate=$this->getRelatedRecords();
