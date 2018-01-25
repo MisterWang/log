@@ -41,4 +41,5 @@ if (is_object($data)) {
 * JsonSerializable
 * SimpleXMLElement
 * Iterator
+
 中，JsonSerializable只需实现一个方法...
