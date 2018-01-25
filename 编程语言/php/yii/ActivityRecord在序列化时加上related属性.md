@@ -36,3 +36,9 @@ if (is_object($data)) {
   }
 }
 ```
+在接口
+* JsExpression
+* JsonSerializable
+* SimpleXMLElement
+* Iterator
+中，JsonSerializable只需实现一个方法...
