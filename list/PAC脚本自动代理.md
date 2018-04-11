@@ -1,3 +1,8 @@
+---
+title: This is my title
+layout: post
+---
+
 ## 入口函数
 FindProxyForURL(url,host); 
 
