@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-README" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/README/" class="article-date">
+  <time datetime="2018-04-27T09:50:55.291Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="log"><a href="#log" class="headerlink" title="log"></a>log</h1><p>问题记录</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/README/" data-id="cjghs8bol0000cades9p5i7qw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/test/" class="article-date">
+  <time datetime="2018-04-27T09:50:55.291Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/分类/">分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/test/">测试</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>测试</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/test/" data-id="cjghs8bpi0002cadehpuaqtvl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/标签/">标签</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/ext/swoole/memory/sharememory" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/ext/swoole/memory/sharememory/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="共享内存"><a href="#共享内存" class="headerlink" title="共享内存"></a>共享内存</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SW_SHM_MMAP_FILE_LEN  64</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">swShareMemory_mmap</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> size;</span><br><span class="line">    <span class="keyword">char</span> mapfile[SW_SHM_MMAP_FILE_LEN];</span><br><span class="line">    <span class="keyword">int</span> tmpfd;</span><br><span class="line">    <span class="keyword">int</span> key;</span><br><span class="line">    <span class="keyword">int</span> shmid;</span><br><span class="line">    <span class="keyword">void</span> *mem;</span><br><span class="line">&#125; swShareMemory;</span><br></pre></td></tr></table></figure>
+<p>sharememory 分别有基于sysv实现和基于mmap的实现,但只是使用了mmap的实现</p>
+<h3 id="sysv实现"><a href="#sysv实现" class="headerlink" title="sysv实现"></a>sysv实现</h3><p>略</p>
+<h3 id="mmap实现"><a href="#mmap实现" class="headerlink" title="mmap实现"></a>mmap实现</h3><p>略</p>
+<h3 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h3><p>| swShareMemory | t_mem(真正返回的内存地址) |<br><br>使用 sw_shm_malloc 返回的是共享内存首地址+swShareMemory占用大小的偏移量，calloc同理。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span>* <span class="title">sw_shm_malloc</span><span class="params">(<span class="keyword">size_t</span> size)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    swShareMemory object;</span><br><span class="line">    <span class="keyword">void</span> *mem;</span><br><span class="line">    <span class="comment">//object对象需要保存在头部</span></span><br><span class="line">    size += <span class="keyword">sizeof</span>(swShareMemory);</span><br><span class="line">    mem = swShareMemory_mmap_create(&amp;object, size, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="keyword">if</span> (mem == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memcpy</span>(mem, &amp;object, <span class="keyword">sizeof</span>(swShareMemory));</span><br><span class="line">        <span class="keyword">return</span> mem + <span class="keyword">sizeof</span>(swShareMemory); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/ext/swoole/memory/sharememory/" data-id="cjghs8by70023cade9jql56ct" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/ext/swoole/daemon" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/ext/swoole/daemon/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="daemon"><a href="#daemon" class="headerlink" title="daemon"></a>daemon</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AC_CHECK_LIB(c, daemon, AC_DEFINE(HAVE_DAEMON, 1, [have daemon]))</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> HAVE_DAEMON</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">daemon</span><span class="params">(<span class="keyword">int</span> nochdir, <span class="keyword">int</span> noclose)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">pid_t</span> pid;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!nochdir &amp;&amp; chdir(<span class="string">"/"</span>) != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        swWarn(<span class="string">"chdir() failed. Error: %s[%d]"</span>, strerror(errno), errno);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!noclose)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> fd = open(<span class="string">"/dev/null"</span>, O_RDWR);</span><br><span class="line">        <span class="keyword">if</span> (fd &lt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            swWarn(<span class="string">"open() failed. Error: %s[%d]"</span>, strerror(errno), errno);</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (dup2(fd, <span class="number">0</span>) &lt; <span class="number">0</span> || dup2(fd, <span class="number">1</span>) &lt; <span class="number">0</span> || dup2(fd, <span class="number">2</span>) &lt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            close(fd);</span><br><span class="line">            swWarn(<span class="string">"dup2() failed. Error: %s[%d]"</span>, strerror(errno), errno);</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        close(fd);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    pid = fork();</span><br><span class="line">    <span class="keyword">if</span> (pid &lt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        swWarn(<span class="string">"fork() failed. Error: %s[%d]"</span>, strerror(errno), errno);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (pid &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        _exit(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (setsid() &lt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        swWarn(<span class="string">"setsid() failed. Error: %s[%d]"</span>, strerror(errno), errno);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/ext/swoole/daemon/" data-id="cjghs8by60022cade7m5qe4rz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/yii/工具列表" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/yii/工具列表/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="yii2-工具集"><a href="#yii2-工具集" class="headerlink" title="yii2 工具集"></a>yii2 工具集</h1><p><a href="https://github.com/dmstr/yii2-adminlte-asset" target="_blank" rel="noopener">模板-adminlte</a></p>
+<p><a href="https://github.com/yiisoft/yii2-apidoc" target="_blank" rel="noopener">文档生成-apidoc</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/yii/工具列表/" data-id="cjghs8by40021cades5n46zyo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/yii/从入门到放弃" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/yii/从入门到放弃/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/yii/从入门到放弃/" data-id="cjghs8by20020cadehq5iiy7y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/yii/yii.base.InvalidConfigException" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/yii/yii.base.InvalidConfigException/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="执行迁移命令报错"><a href="#执行迁移命令报错" class="headerlink" title="执行迁移命令报错"></a>执行迁移命令报错</h2><p>Exception ‘yii\base\InvalidConfigException’ with message ‘You should configure “authManager” component to use database before executing this migration.’</p>
+<p>配置 console/web.php<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'components'</span> =&gt; [</span><br><span class="line">    <span class="string">"authManager"</span> =&gt; [</span><br><span class="line">        <span class="string">"class"</span> =&gt; <span class="string">'yii\rbac\DbManager'</span>,</span><br><span class="line">        <span class="string">"defaultRoles"</span> =&gt; [<span class="string">"guest"</span>],</span><br><span class="line">    ],</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/yii/yii.base.InvalidConfigException/" data-id="cjghs8by0001zcadek5htzdss" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/yii/ActiveRecord的迭代器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/yii/ActiveRecord的迭代器/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>实现接口<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Model</span> <span class="keyword">extends</span> <span class="title">Component</span> <span class="keyword">implements</span> <span class="title">StaticInstanceInterface</span>, <span class="title">IteratorAggregate</span>, <span class="title">ArrayAccess</span>, <span class="title">Arrayable</span></span></span><br></pre></td></tr></table></figure></p>
+<p>实现IteratorAggregate接口<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Returns an iterator for traversing the attributes in the model.</span></span><br><span class="line"><span class="comment"> * This method is required by the interface [[\IteratorAggregate]].</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> ArrayIterator an iterator for traversing the items in the list.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">getIterator</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $attributes = <span class="keyword">$this</span>-&gt;getAttributes();</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ArrayIterator($attributes);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/yii/ActiveRecord的迭代器/" data-id="cjghs8bxx001ycadepysfwizk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/yii/ActiveRecord在序列化时加上related属性" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/yii/ActiveRecord在序列化时加上related属性/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>实现JsonSerializable接口<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyRecord</span> <span class="keyword">extends</span> <span class="title">ActiveRecord</span> <span class="keyword">implements</span> <span class="title">JsonSerializable</span></span>&#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">jsonSerialize</span><span class="params">()</span></span>&#123;</span><br><span class="line">      $array=<span class="keyword">$this</span>-&gt;getAttributes(<span class="keyword">$this</span>-&gt;fields());</span><br><span class="line">      $relate=<span class="keyword">$this</span>-&gt;getRelatedRecords();</span><br><span class="line">      <span class="keyword">return</span> $array+$relate;  </span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>yii\helpers\BaseJosn obj的预处理<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (is_object($data)) &#123;</span><br><span class="line">  <span class="keyword">if</span> ($data <span class="keyword">instanceof</span> JsExpression) &#123;</span><br><span class="line">      $token = <span class="string">"!&#123;[$expPrefix="</span> . count($expressions) . <span class="string">']&#125;!'</span>;</span><br><span class="line">      $expressions[<span class="string">'"'</span> . $token . <span class="string">'"'</span>] = $data-&gt;expression;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> $token;</span><br><span class="line">  &#125; <span class="keyword">elseif</span> ($data <span class="keyword">instanceof</span> \JsonSerializable) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">static</span>::processData($data-&gt;jsonSerialize(), $expressions, $expPrefix);</span><br><span class="line">  &#125; <span class="keyword">elseif</span> ($data <span class="keyword">instanceof</span> Arrayable) &#123;</span><br><span class="line">      $data = $data-&gt;toArray();</span><br><span class="line">  &#125; <span class="keyword">elseif</span> ($data <span class="keyword">instanceof</span> \SimpleXMLElement) &#123;</span><br><span class="line">      $data = (<span class="keyword">array</span>) $data;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      $result = [];</span><br><span class="line">      <span class="keyword">foreach</span> ($data <span class="keyword">as</span> $name =&gt; $value) &#123;</span><br><span class="line">          $result[$name] = $value;</span><br><span class="line">      &#125;</span><br><span class="line">      $data = $result;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> ($data === []) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> \stdClass();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在接口</p>
+<ul>
+<li>JsExpression</li>
+<li>JsonSerializable</li>
+<li>Arrayable</li>
+<li>SimpleXMLElement</li>
+<li>Iterator</li>
+</ul>
+<p>中，JsonSerializable只需实现一个方法…或者重写ArrayableTrait的toArray方法？</p>
+<p>结论还是实现JsonSerializable简单…</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/yii/ActiveRecord在序列化时加上related属性/" data-id="cjghs8bxs001xcade795t8av4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-编程语言/php/laravel/从入门到放弃" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/php/laravel/从入门到放弃/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="从入门到放弃"><a href="#从入门到放弃" class="headerlink" title="从入门到放弃"></a>从入门到放弃</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/php/laravel/从入门到放弃/" data-id="cjghs8bxr001wcade8ue54tem" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分类/">分类</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/标签/">标签</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/标签/" style="font-size: 10px;">标签</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/27/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/test/">测试</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/ext/swoole/memory/sharememory/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/ext/swoole/daemon/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/yii/工具列表/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

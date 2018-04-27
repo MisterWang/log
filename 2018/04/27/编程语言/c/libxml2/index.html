@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="libxml2xmlEntity1234567891011121314151617181920212223242526struct _xmlEntity &amp;#123;    void           *_private;	        /* application data */    xmlElementType          type;       /* XML_ENTITY_DEC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/04/27/编程语言/c/libxml2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="libxml2xmlEntity1234567891011121314151617181920212223242526struct _xmlEntity &amp;#123;    void           *_private;	        /* application data */    xmlElementType          type;       /* XML_ENTITY_DEC">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-27T09:50:17.223Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="libxml2xmlEntity1234567891011121314151617181920212223242526struct _xmlEntity &amp;#123;    void           *_private;	        /* application data */    xmlElementType          type;       /* XML_ENTITY_DEC">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-编程语言/c/libxml2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/编程语言/c/libxml2/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.223Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="libxml2"><a href="#libxml2" class="headerlink" title="libxml2"></a>libxml2</h1><h2 id="xmlEntity"><a href="#xmlEntity" class="headerlink" title="xmlEntity"></a>xmlEntity</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">xmlEntity</span> &#123;</span></span><br><span class="line">    <span class="keyword">void</span>           *_private;	        <span class="comment">/* application data */</span></span><br><span class="line">    xmlElementType          type;       <span class="comment">/* XML_ENTITY_DECL, must be second ! */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar          *name;	<span class="comment">/* Entity name */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>    *<span class="title">children</span>;</span>	<span class="comment">/* First child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>        *<span class="title">last</span>;</span>	<span class="comment">/* Last child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDtd</span>       *<span class="title">parent</span>;</span>	<span class="comment">/* -&gt; DTD */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>        *<span class="title">next</span>;</span>	<span class="comment">/* next sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>        *<span class="title">prev</span>;</span>	<span class="comment">/* previous sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span>          *<span class="title">doc</span>;</span>       <span class="comment">/* the containing document */</span></span><br><span class="line"></span><br><span class="line">    xmlChar                *orig;	<span class="comment">/* content without ref substitution */</span></span><br><span class="line">    xmlChar             *content;	<span class="comment">/* content or ndata if unparsed */</span></span><br><span class="line">    <span class="keyword">int</span>                   length;	<span class="comment">/* the content length */</span></span><br><span class="line">    xmlEntityType          etype;	<span class="comment">/* The entity type */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar    *ExternalID;	<span class="comment">/* External identifier for PUBLIC */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar      *SystemID;	<span class="comment">/* URI for a SYSTEM or PUBLIC Entity */</span></span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlEntity</span>     *<span class="title">nexte</span>;</span>	<span class="comment">/* unused */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar           *URI;	<span class="comment">/* the full URI as computed */</span></span><br><span class="line">    <span class="keyword">int</span>                    owner;	<span class="comment">/* does the entity own the childrens */</span></span><br><span class="line">    <span class="keyword">int</span>			 checked;	<span class="comment">/* was the entity content checked */</span></span><br><span class="line">					<span class="comment">/* this is also used to count entities</span></span><br><span class="line"><span class="comment">					 * references done from that entity</span></span><br><span class="line"><span class="comment">					 * and if it contains '&lt;' */</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="xmlNode"><a href="#xmlNode" class="headerlink" title="xmlNode"></a>xmlNode</h2><p>xml树结构为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">0 </span><br><span class="line">|\\\</span><br><span class="line">| \\ \ </span><br><span class="line">0-0-0-0</span><br><span class="line">|\   /|</span><br><span class="line">0-0 0-0</span><br><span class="line">      |\</span><br><span class="line">      0-0</span><br></pre></td></tr></table></figure></p>
+<p>每个节点有两个指针分别指向子节点链表的头和尾，另外有两个指针分别指向当前兄弟链表的前驱节点和后驱节点,以及一个父节点指针。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> &#123;</span></span><br><span class="line">    <span class="keyword">void</span>           *_private;	<span class="comment">/* application data */</span></span><br><span class="line">    xmlElementType   type;	<span class="comment">/* type number, must be second ! */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar   *name;      <span class="comment">/* the name of the node, or the entity */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">children</span>;</span>	<span class="comment">/* parent-&gt;childs link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">last</span>;</span>	<span class="comment">/* last child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">parent</span>;</span>	<span class="comment">/* child-&gt;parent link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">next</span>;</span>	<span class="comment">/* next sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">prev</span>;</span>	<span class="comment">/* previous sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span>  *<span class="title">doc</span>;</span>	<span class="comment">/* the containing document */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* End of common part */</span></span><br><span class="line">    xmlNs           *ns;        <span class="comment">/* pointer to the associated namespace */</span></span><br><span class="line">    xmlChar         *content;   <span class="comment">/* the content */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlAttr</span> *<span class="title">properties</span>;</span><span class="comment">/* properties list */</span></span><br><span class="line">    xmlNs           *nsDef;     <span class="comment">/* namespace definitions on this node */</span></span><br><span class="line">    <span class="keyword">void</span>            *psvi;	<span class="comment">/* for type/PSVI informations */</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span>   line;	<span class="comment">/* line number */</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span>   extra;	<span class="comment">/* extra data for XPath/XSLT */</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="xmlDoc"><a href="#xmlDoc" class="headerlink" title="xmlDoc"></a>xmlDoc</h2><p>document结构保存了一份id的映射表用来通过id快速找到节点。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span> &#123;</span></span><br><span class="line">    <span class="keyword">void</span>           *_private;	<span class="comment">/* application data */</span></span><br><span class="line">    xmlElementType  type;       <span class="comment">/* XML_DOCUMENT_NODE, must be second ! */</span></span><br><span class="line">    <span class="keyword">char</span>           *name;	<span class="comment">/* name/filename/URI of the document */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">children</span>;</span>	<span class="comment">/* the document tree */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">last</span>;</span>	<span class="comment">/* last child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">parent</span>;</span>	<span class="comment">/* child-&gt;parent link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">next</span>;</span>	<span class="comment">/* next sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">prev</span>;</span>	<span class="comment">/* previous sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span>  *<span class="title">doc</span>;</span>	<span class="comment">/* autoreference to itself */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* End of common part */</span></span><br><span class="line">    <span class="keyword">int</span>             compression;<span class="comment">/* level of zlib compression */</span></span><br><span class="line">    <span class="keyword">int</span>             standalone; <span class="comment">/* standalone document (no external refs)</span></span><br><span class="line"><span class="comment">				     1 if standalone="yes"</span></span><br><span class="line"><span class="comment">				     0 if standalone="no"</span></span><br><span class="line"><span class="comment">				    -1 if there is no XML declaration</span></span><br><span class="line"><span class="comment">				    -2 if there is an XML declaration, but no</span></span><br><span class="line"><span class="comment">					standalone attribute was specified */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDtd</span>  *<span class="title">intSubset</span>;</span>	<span class="comment">/* the document internal subset */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDtd</span>  *<span class="title">extSubset</span>;</span>	<span class="comment">/* the document external subset */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNs</span>   *<span class="title">oldNs</span>;</span>	<span class="comment">/* Global namespace, the old way */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar  *version;	<span class="comment">/* the XML version string */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar  *encoding;   <span class="comment">/* external initial encoding, if any */</span></span><br><span class="line">    <span class="keyword">void</span>           *ids;        <span class="comment">/* Hash table for ID attributes if any */</span></span><br><span class="line">    <span class="keyword">void</span>           *refs;       <span class="comment">/* Hash table for IDREFs attributes if any */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar  *URL;	<span class="comment">/* The URI for that document */</span></span><br><span class="line">    <span class="keyword">int</span>             charset;    <span class="comment">/* encoding of the in-memory content</span></span><br><span class="line"><span class="comment">				   actually an xmlCharEncoding */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDict</span> *<span class="title">dict</span>;</span>      <span class="comment">/* dict used to allocate names or NULL */</span></span><br><span class="line">    <span class="keyword">void</span>           *psvi;	<span class="comment">/* for type/PSVI informations */</span></span><br><span class="line">    <span class="keyword">int</span>             parseFlags;	<span class="comment">/* set of xmlParserOption used to parse the</span></span><br><span class="line"><span class="comment">				   document */</span></span><br><span class="line">    <span class="keyword">int</span>             properties;	<span class="comment">/* set of xmlDocProperties for this document</span></span><br><span class="line"><span class="comment">				   set at the end of parsing */</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/编程语言/c/libxml2/" data-id="cjghs8bv30014cadehihuxhsp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/04/27/编程语言/c/gcc/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/04/27/系统相关/docker/readme/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分类/">分类</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/标签/">标签</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/标签/" style="font-size: 10px;">标签</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/27/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/test/">测试</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/ext/swoole/memory/sharememory/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/ext/swoole/daemon/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/yii/工具列表/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

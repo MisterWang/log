@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="docker具体查看 参考 安装12export CHANNEL=stablecurl -fsSL https://get.docker.com/ | sh -s -- --mirror Aliyun docker 删除所有容器12docker stop $(docker ps -q) &amp;amp; docker rm $(docker ps -aq)#sudo docker stop $(sudo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/04/27/系统相关/docker/readme/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="docker具体查看 参考 安装12export CHANNEL=stablecurl -fsSL https://get.docker.com/ | sh -s -- --mirror Aliyun docker 删除所有容器12docker stop $(docker ps -q) &amp;amp; docker rm $(docker ps -aq)#sudo docker stop $(sudo">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-27T09:50:17.219Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="docker具体查看 参考 安装12export CHANNEL=stablecurl -fsSL https://get.docker.com/ | sh -s -- --mirror Aliyun docker 删除所有容器12docker stop $(docker ps -q) &amp;amp; docker rm $(docker ps -aq)#sudo docker stop $(sudo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-系统相关/docker/readme" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/系统相关/docker/readme/" class="article-date">
+  <time datetime="2018-04-27T09:50:17.219Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h1><p><a href="https://github.com/MisterWang/docker" target="_blank" rel="noopener">具体查看</a></p>
+<p><a href="https://blog.lab99.org/post/docker-2016-07-14-faq.html" target="_blank" rel="noopener">参考</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export CHANNEL=stable</span><br><span class="line">curl -fsSL https://get.docker.com/ | sh -s -- --mirror Aliyun</span><br></pre></td></tr></table></figure>
+<h2 id="docker-删除所有容器"><a href="#docker-删除所有容器" class="headerlink" title="docker 删除所有容器"></a>docker 删除所有容器</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker stop $(docker ps -q) &amp; docker rm $(docker ps -aq)</span><br><span class="line"><span class="meta">#</span><span class="bash">sudo docker stop $(sudo docker ps -q) &amp; sudo docker rm $(sudo docker ps -aq)</span></span><br></pre></td></tr></table></figure>
+<h2 id="windows-7-toolbox"><a href="#windows-7-toolbox" class="headerlink" title="windows 7 toolbox"></a>windows 7 toolbox</h2><p><a href="https://docs.docker.com/toolbox/toolbox_install_windows/" target="_blank" rel="noopener">toolbox</a></p>
+<h3 id="配置其他cmd"><a href="#配置其他cmd" class="headerlink" title="配置其他cmd"></a>配置其他cmd</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-machine env default</span><br></pre></td></tr></table></figure>
+<h3 id="babun中"><a href="#babun中" class="headerlink" title="babun中"></a>babun中</h3><p><a href="toolbox-babun">babun.sh</a></p>
+<h3 id="babunrc"><a href="#babunrc" class="headerlink" title=".babunrc"></a>.babunrc</h3><p><a href="toolbox-babunrc">babunrc.sh</a></p>
+<h3 id="一个容器间互相访问的问题"><a href="#一个容器间互相访问的问题" class="headerlink" title="一个容器间互相访问的问题"></a>一个容器间互相访问的问题</h3><p>因为监听了127.0.0.1这个ip。</p>
+<h4 id="127-0-0-1与0-0-0-0的区别"><a href="#127-0-0-1与0-0-0-0的区别" class="headerlink" title="127.0.0.1与0.0.0.0的区别"></a>127.0.0.1与0.0.0.0的区别</h4><p>127.0.0.1只能本机访问，无法通过它对外提供服务。</p>
+<p>0.0.0.0 则表示本机所有ip。如本机有192.168.0.2，10.0.0.2和127.0.0.1三个ip,使用它表示同时监听这些ip的某个端口。<br><a href="http://www.mamicode.com/info-detail-1144209.html" target="_blank" rel="noopener">from</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/系统相关/docker/readme/" data-id="cjghs8bv00012cadej7dxfcsz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/04/27/编程语言/c/libxml2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/04/27/开发工具/Makefile/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分类/">分类</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/标签/">标签</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/标签/" style="font-size: 10px;">标签</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/27/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/test/">测试</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/ext/swoole/memory/sharememory/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/ext/swoole/daemon/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/编程语言/php/yii/工具列表/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
