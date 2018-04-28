@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<!--begin head-->
+<head>
+    <meta charset="utf-8">
+<!--begin title-->
+
+<title>
+    
+    libxml2的树结构 |
+    
+    Hexo</title>
+<!--end title-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--begin mete-->
+
+<meta name="author" content="John Doe"/>
+
+<!--end mete-->
+<!--begin keywords-->
+<meta name="keywords" content="PHPUnit,apache,collect,libxml2,php,swoole,todo,tools,冬妮娅,抄就完事了,标签"/>
+<!--end keywords-->
+<!--begin rss-->
+
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+
+<!--end rss-->
+<!--begin favicon-->
+
+<link rel="icon" href="/log/favicon.ico">
+
+<!--end favicon-->
+<!--begin style-->
+
+<!-- stylesheets list from config.yml -->
+
+<link rel="stylesheet" href="/log/css/hannah.css">
+
+
+<!--end style-->
+</head>
+<!--end head-->
+<!--begin body-->
+<body class="container-fluid">
+
+<!--begin menu-->
+<div class="hannah-menu">
+    <i class="fh fh-ravelry fa-2x btn fixed-menu animated bounce" id="btn_menu" aria-hidden="true"></i>
+    <div class="menu-outer container-fluid hide animated" id="div_menu">
+        <div class="row" style="margin-bottom: 5px;">
+            
+            <div class="col-md-offset-2 col-md-3 col-xs-4 text-center left-social">
+                
+                <a target="_blank" href="https://github.com/objectyan" title="GitHub"><i class="fh fh-github"></i></a>
+                
+                <style>
+                    .left-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    .left-social * {
+                        color: #f1ce8e;
+                    }
+
+                    @media (max-width: 767px) {
+                        .left-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+                </style>
+            </div>
+            <!--begin handImg-->
+            <div class="col-md-2 col-xs-4 text-center">
+                
+                <img src="/log/img/logo.jpg" alt="Head Image" class="img-circle">
+                
+            </div>
+            <!--end handImg-->
+            <div class="col-md-3 col-xs-4 text-center right-social">
+                
+                <style>
+                    .right-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    @media (max-width: 767px) {
+                        .right-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+
+                    .right-social * {
+                        color: #f1ce8e;
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-push-2 col-xs-12 ">
+                <dl class="menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-bars" aria-hidden="true"></i> Menu
+                    </dt>
+                    <dd class="menu-content-content">
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/" class="btn btn-block">
+                                
+                                <i class="fh fh-ravelry"></i>
+                                Home
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/categories" class="btn btn-block">
+                                
+                                <i class="fh fh-cubes"></i>
+                                Category
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/tags" class="btn btn-block">
+                                
+                                <i class="fh fh-tags"></i>
+                                Tag
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/archives" class="btn btn-block">
+                                
+                                <i class="fh fh-archive"></i>
+                                Archives
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/about" class="btn btn-block">
+                                
+                                <i class="fh fh-about"></i>
+                                About
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/doc" class="btn btn-block">
+                                
+                                <i class="fh fh-document"></i>
+                                Doc
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/plug" class="btn btn-block">
+                                
+                                <i class="fh fh-plug"></i>
+                                Plug
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/sitemap" class="btn btn-block">
+                                
+                                <i class="fh fh-sitemap"></i>
+                                SiteMap
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/atom.xml" class="btn btn-block">
+                                <i class="fh fh-rss" aria-hidden="true"></i> RSS
+                            </a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-offset-2 col-xs-12 ">
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-cubes" aria-hidden="true"></i> Category
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        <ul class="menu-cate-list"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/apache/"><i class="fh fh-cube" aria-hidden="true"></i> apache</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/c/"><i class="fh fh-cube" aria-hidden="true"></i> c</a><span class="menu-cate-list-count">2</span><ul class="menu-cate-list-child"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/c/libxml2/"><i class="fh fh-cube" aria-hidden="true"></i> libxml2</a><span class="menu-cate-list-count">2</span></li></ul></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/collect/"><i class="fh fh-cube" aria-hidden="true"></i> collect</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/init/"><i class="fh fh-cube" aria-hidden="true"></i> init</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/php/"><i class="fh fh-cube" aria-hidden="true"></i> php</a><span class="menu-cate-list-count">11</span><ul class="menu-cate-list-child"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/php/PHPUnit/"><i class="fh fh-cube" aria-hidden="true"></i> PHPUnit</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/php/functions/"><i class="fh fh-cube" aria-hidden="true"></i> functions</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/php/laravel/"><i class="fh fh-cube" aria-hidden="true"></i> laravel</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/php/swoole/"><i class="fh fh-cube" aria-hidden="true"></i> swoole</a><span class="menu-cate-list-count">2</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/php/tools/"><i class="fh fh-cube" aria-hidden="true"></i> tools</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/php/yii/"><i class="fh fh-cube" aria-hidden="true"></i> yii</a><span class="menu-cate-list-count">3</span></li></ul></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/todo/"><i class="fh fh-cube" aria-hidden="true"></i> todo</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/冬妮娅/"><i class="fh fh-cube" aria-hidden="true"></i> 冬妮娅</a><span class="menu-cate-list-count">2</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/log/categories/分类/"><i class="fh fh-cube" aria-hidden="true"></i> 分类</a><span class="menu-cate-list-count">1</span></li></ul>
+                    </dd>
+                </dl>
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-tag" aria-hidden="true"></i> Tags
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        <ul class="menu-tag-list"><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/PHPUnit/"><i class="fh fh-tag" aria-hidden="true"></i> PHPUnit</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/apache/"><i class="fh fh-tag" aria-hidden="true"></i> apache</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/collect/"><i class="fh fh-tag" aria-hidden="true"></i> collect</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/libxml2/"><i class="fh fh-tag" aria-hidden="true"></i> libxml2</a><span class="menu-tag-list-count">2</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/php/"><i class="fh fh-tag" aria-hidden="true"></i> php</a><span class="menu-tag-list-count">9</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/swoole/"><i class="fh fh-tag" aria-hidden="true"></i> swoole</a><span class="menu-tag-list-count">2</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/todo/"><i class="fh fh-tag" aria-hidden="true"></i> todo</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/tools/"><i class="fh fh-tag" aria-hidden="true"></i> tools</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/冬妮娅/"><i class="fh fh-tag" aria-hidden="true"></i> 冬妮娅</a><span class="menu-tag-list-count">2</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/抄就完事了/"><i class="fh fh-tag" aria-hidden="true"></i> 抄就完事了</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/log/tags/标签/"><i class="fh fh-tag" aria-hidden="true"></i> 标签</a><span class="menu-tag-list-count">1</span></li></ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end menu-->
+
+<div class="row hannah-body">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <!--begin breadcrumb-->
+        <div class="bread-crumb">
+    <ul class="bread-crumb-menu animated rubberBand">
+        <li><a href="/log/"><i class="fh fh-ravelry" aria-hidden="true"></i> Home</a></li>
+        
+        <li><a href="/log/categories/c/"><i class="fh fh-cube" aria-hidden="true"></i> c</a>
+        </li>
+        
+        <li><a href="/log/categories/c/libxml2/"><i class="fh fh-cube" aria-hidden="true"></i> libxml2</a>
+        </li>
+        
+        <li>
+            
+            <i class="fh fh-newspaper-o" aria-hidden="true"></i>
+            
+            libxml2的树结构
+        </li>
+        
+    </ul>
+    <div class="bread-crumb-search">
+        <div class="search">
+    <i class="fh fh-search icon-search"></i>
+    <input placeholder="Search ..." onkeyup="searchFunc(this,event,'/log/search.xml')"
+           class="input-search animated fadeInRight"/>
+    <div class="search-result animated fadeInRight">
+        <a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/laravel/margate/">laravel SQLSTATE[42000]:\ Syntax error or access violation:\ 1071 Specified key was too long; max key length is 1000 bytes</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/README/">init</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/ext/swoole/daemon/">swoole daemon</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/yii/yii.base.InvalidConfigException/">执行迁移命令报错</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/yii/ActiveRecord的迭代器/">ActiveRecord的迭代器</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/yii/ActiveRecord在序列化时加上related属性/">ActiveRecord在序列化时加上related属性</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/collect/201801/">收藏-201801</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/ext/swoole/memory/sharememory/">swoole 共享内存</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/工具列表/">PHP工具列表</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/unpack/">php unpack</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/list/TODO/">TODO</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/php/PHPUnit中打印变量/">PHPUnit中打印变量</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/c/libxml2中的hash算法/">libxml2的hash算法</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/编程语言/c/libxml2/">libxml2的树结构</a><a class="animated tada col-lg-12 search-result-item result-link" href="/log/2018/04/28/开发工具/phpstorm/">PHPStorm 快捷键</a>
+    </div>
+</div>
+    </div>
+</div>
+        <!--end breadcrumb-->
+        <article class="post animated rollIn">
+    <h1 class="post-title">libxml2的树结构</h1>
+    <div class="post-subtitle">
+        
+        <time datetime="2018-04-28T08:25:13.700Z" class="item">
+            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-04-28
+        </time>
+        
+        
+        <span class="item">
+      <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
+            
+            <a class="label label-primary tags" href="/log/categories/c/">
+           <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;c
+        </a>
+            
+            <a class="label label-primary tags" href="/log/categories/c/libxml2/">
+           <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;libxml2
+        </a>
+            
+        </span>
+        
+        
+        <span class="item">
+        <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
+            
+            <a class="label label-info tags" href="/log/tags/libxml2/">
+            <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;libxml2
+            </a>
+            
+        </span>
+        
+    </div>
+    
+    <h1 id="libxml2"><a href="#libxml2" class="headerlink" title="libxml2"></a>libxml2</h1><h2 id="xmlEntity"><a href="#xmlEntity" class="headerlink" title="xmlEntity"></a>xmlEntity</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">xmlEntity</span> &#123;</span></span><br><span class="line">    <span class="keyword">void</span>           *_private;	        <span class="comment">/* application data */</span></span><br><span class="line">    xmlElementType          type;       <span class="comment">/* XML_ENTITY_DECL, must be second ! */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar          *name;	<span class="comment">/* Entity name */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>    *<span class="title">children</span>;</span>	<span class="comment">/* First child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>        *<span class="title">last</span>;</span>	<span class="comment">/* Last child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDtd</span>       *<span class="title">parent</span>;</span>	<span class="comment">/* -&gt; DTD */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>        *<span class="title">next</span>;</span>	<span class="comment">/* next sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span>        *<span class="title">prev</span>;</span>	<span class="comment">/* previous sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span>          *<span class="title">doc</span>;</span>       <span class="comment">/* the containing document */</span></span><br><span class="line"></span><br><span class="line">    xmlChar                *orig;	<span class="comment">/* content without ref substitution */</span></span><br><span class="line">    xmlChar             *content;	<span class="comment">/* content or ndata if unparsed */</span></span><br><span class="line">    <span class="keyword">int</span>                   length;	<span class="comment">/* the content length */</span></span><br><span class="line">    xmlEntityType          etype;	<span class="comment">/* The entity type */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar    *ExternalID;	<span class="comment">/* External identifier for PUBLIC */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar      *SystemID;	<span class="comment">/* URI for a SYSTEM or PUBLIC Entity */</span></span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlEntity</span>     *<span class="title">nexte</span>;</span>	<span class="comment">/* unused */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar           *URI;	<span class="comment">/* the full URI as computed */</span></span><br><span class="line">    <span class="keyword">int</span>                    owner;	<span class="comment">/* does the entity own the childrens */</span></span><br><span class="line">    <span class="keyword">int</span>			 checked;	<span class="comment">/* was the entity content checked */</span></span><br><span class="line">					<span class="comment">/* this is also used to count entities</span></span><br><span class="line"><span class="comment">					 * references done from that entity</span></span><br><span class="line"><span class="comment">					 * and if it contains '&lt;' */</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="xmlNode"><a href="#xmlNode" class="headerlink" title="xmlNode"></a>xmlNode</h2><p>xml树结构为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">0 </span><br><span class="line">|\\\</span><br><span class="line">| \\ \ </span><br><span class="line">0-0-0-0</span><br><span class="line">|\   /|</span><br><span class="line">0-0 0-0</span><br><span class="line">      |\</span><br><span class="line">      0-0</span><br></pre></td></tr></table></figure></p>
+<p>每个节点有两个指针分别指向子节点链表的头和尾，另外有两个指针分别指向当前兄弟链表的前驱节点和后驱节点,以及一个父节点指针。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> &#123;</span></span><br><span class="line">    <span class="keyword">void</span>           *_private;	<span class="comment">/* application data */</span></span><br><span class="line">    xmlElementType   type;	<span class="comment">/* type number, must be second ! */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar   *name;      <span class="comment">/* the name of the node, or the entity */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">children</span>;</span>	<span class="comment">/* parent-&gt;childs link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">last</span>;</span>	<span class="comment">/* last child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">parent</span>;</span>	<span class="comment">/* child-&gt;parent link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">next</span>;</span>	<span class="comment">/* next sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">prev</span>;</span>	<span class="comment">/* previous sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span>  *<span class="title">doc</span>;</span>	<span class="comment">/* the containing document */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* End of common part */</span></span><br><span class="line">    xmlNs           *ns;        <span class="comment">/* pointer to the associated namespace */</span></span><br><span class="line">    xmlChar         *content;   <span class="comment">/* the content */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlAttr</span> *<span class="title">properties</span>;</span><span class="comment">/* properties list */</span></span><br><span class="line">    xmlNs           *nsDef;     <span class="comment">/* namespace definitions on this node */</span></span><br><span class="line">    <span class="keyword">void</span>            *psvi;	<span class="comment">/* for type/PSVI informations */</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span>   line;	<span class="comment">/* line number */</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span>   extra;	<span class="comment">/* extra data for XPath/XSLT */</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="xmlDoc"><a href="#xmlDoc" class="headerlink" title="xmlDoc"></a>xmlDoc</h2><p>document结构保存了一份id的映射表用来通过id快速找到节点。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span> &#123;</span></span><br><span class="line">    <span class="keyword">void</span>           *_private;	<span class="comment">/* application data */</span></span><br><span class="line">    xmlElementType  type;       <span class="comment">/* XML_DOCUMENT_NODE, must be second ! */</span></span><br><span class="line">    <span class="keyword">char</span>           *name;	<span class="comment">/* name/filename/URI of the document */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">children</span>;</span>	<span class="comment">/* the document tree */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">last</span>;</span>	<span class="comment">/* last child link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">parent</span>;</span>	<span class="comment">/* child-&gt;parent link */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">next</span>;</span>	<span class="comment">/* next sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNode</span> *<span class="title">prev</span>;</span>	<span class="comment">/* previous sibling link  */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDoc</span>  *<span class="title">doc</span>;</span>	<span class="comment">/* autoreference to itself */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* End of common part */</span></span><br><span class="line">    <span class="keyword">int</span>             compression;<span class="comment">/* level of zlib compression */</span></span><br><span class="line">    <span class="keyword">int</span>             standalone; <span class="comment">/* standalone document (no external refs)</span></span><br><span class="line"><span class="comment">				     1 if standalone="yes"</span></span><br><span class="line"><span class="comment">				     0 if standalone="no"</span></span><br><span class="line"><span class="comment">				    -1 if there is no XML declaration</span></span><br><span class="line"><span class="comment">				    -2 if there is an XML declaration, but no</span></span><br><span class="line"><span class="comment">					standalone attribute was specified */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDtd</span>  *<span class="title">intSubset</span>;</span>	<span class="comment">/* the document internal subset */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDtd</span>  *<span class="title">extSubset</span>;</span>	<span class="comment">/* the document external subset */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlNs</span>   *<span class="title">oldNs</span>;</span>	<span class="comment">/* Global namespace, the old way */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar  *version;	<span class="comment">/* the XML version string */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar  *encoding;   <span class="comment">/* external initial encoding, if any */</span></span><br><span class="line">    <span class="keyword">void</span>           *ids;        <span class="comment">/* Hash table for ID attributes if any */</span></span><br><span class="line">    <span class="keyword">void</span>           *refs;       <span class="comment">/* Hash table for IDREFs attributes if any */</span></span><br><span class="line">    <span class="keyword">const</span> xmlChar  *URL;	<span class="comment">/* The URI for that document */</span></span><br><span class="line">    <span class="keyword">int</span>             charset;    <span class="comment">/* encoding of the in-memory content</span></span><br><span class="line"><span class="comment">				   actually an xmlCharEncoding */</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">xmlDict</span> *<span class="title">dict</span>;</span>      <span class="comment">/* dict used to allocate names or NULL */</span></span><br><span class="line">    <span class="keyword">void</span>           *psvi;	<span class="comment">/* for type/PSVI informations */</span></span><br><span class="line">    <span class="keyword">int</span>             parseFlags;	<span class="comment">/* set of xmlParserOption used to parse the</span></span><br><span class="line"><span class="comment">				   document */</span></span><br><span class="line">    <span class="keyword">int</span>             properties;	<span class="comment">/* set of xmlDocProperties for this document</span></span><br><span class="line"><span class="comment">				   set at the end of parsing */</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+
+</article>
+<ol class="animated rollIn hannah-toc"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-1"><a class="animated rollIn hannah-toc-link" href="#libxml2"><span class="animated rollIn hannah-toc-text">libxml2</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#xmlEntity"><span class="animated rollIn hannah-toc-text">xmlEntity</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#xmlNode"><span class="animated rollIn hannah-toc-text">xmlNode</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#xmlDoc"><span class="animated rollIn hannah-toc-text">xmlDoc</span></a></li></ol></li></ol>
+<div class="animated bounceInDown paginations">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <nav>
+            
+            <a href="/log/2018/04/28/编程语言/c/libxml2中的hash算法/" class="prev col-md-2 col-xs-4 text-left">&larr; Prev</a>
+            
+            <span class="page-content col-md-8  col-xs-4 text-center">
+                
+            </span>
+            
+            <a href="/log/2018/04/28/开发工具/phpstorm/" class="next col-md-2 col-xs-4 text-right">Next &rarr;</a>
+            
+        </nav>
+        <div>
+            <div class="col-md-6 col-xs-6 text-left">
+                
+                libxml2的hash算法
+                
+            </div>
+            <div class="col-md-6 col-xs-6 text-right">
+                
+                PHPStorm 快捷键
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--begin comments-->
+        
+<div class="comments" id="comments">
+    
+
+</div>
+
+
+        <!--end comments-->
+    </div>
+</div>
+
+<!--begin footer-->
+<footer id="footer" class="footer animated fadeInUp hide">
+    <p><i class="copy">&copy;</i> 2018 <a href="http://yoursite.com">John Doe</a> All Right Reserved.</p>
+    <p>Powered by <a href="http://hexo.io">Hexo</a>. Theme by <a href="https://github.com/objectyan/hexo-theme-hannah">hannah</a></p>
+</footer>
+<!--end footer-->
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/log/js/hannah.js"></script>
+
+<script src="/log/js/canvas-nest.js"></script>
+
+
+<!--begin analytics-->
+
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8fb2a05be303b36faebf141d7317de43";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!--end analytics-->
+</body>
+<!--end body-->
+</html>
