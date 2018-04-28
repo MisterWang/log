@@ -1,3 +1,13 @@
+---
+title: ActiveRecord在序列化时加上related属性
+categories: 
+- php
+- yii
+tags:
+- php
+layout: post
+---
+
 实现JsonSerializable接口
 ```php
 class MyRecord extends ActiveRecord implements JsonSerializable{
@@ -36,7 +46,9 @@ if (is_object($data)) {
   }
 }
 ```
+
 在接口
+
 * JsExpression
 * JsonSerializable
 * Arrayable

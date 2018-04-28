@@ -1,3 +1,12 @@
+---
+title: libxml2的树结构
+categories: 
+- c
+- libxml2
+tags:
+- libxml2
+layout: post
+---
 # libxml2
 
 ## xmlEntity

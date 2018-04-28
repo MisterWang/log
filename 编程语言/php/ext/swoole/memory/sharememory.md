@@ -1,3 +1,12 @@
+---
+title: swoole 共享内存
+categories: 
+- php
+- swoole
+tags:
+- swoole
+layout: post
+---
 ## 共享内存
 
 ### 定义

@@ -1,3 +1,12 @@
+---
+title: PHPStorm 快捷键
+categories: 
+- php
+tags:
+- php
+layout: post
+---
+
 # PHPStorm 快捷键：
 
 ctrl+tab:         switcher,在已打开文件之间或者工具窗口间切换

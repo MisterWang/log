@@ -1,3 +1,12 @@
+---
+title: apache常用配置
+categories: 
+- apache
+tags:
+- apache
+layout: post
+---
+
 # apache
 
 ## 设置变量

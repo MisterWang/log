@@ -1,3 +1,12 @@
+---
+title: swoole daemon
+categories: 
+- php
+- swoole
+tags:
+- swoole
+layout: post
+---
 # daemon
 
 ```m4

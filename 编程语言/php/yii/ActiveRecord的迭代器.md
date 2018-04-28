@@ -1,10 +1,22 @@
+---
+title: ActiveRecord的迭代器
+categories: 
+- php
+- yii
+tags:
+- php
+layout: post
+---
+
 实现接口
+
 ```php
 class Model extends Component implements StaticInstanceInterface, IteratorAggregate, ArrayAccess, Arrayable
 
 ```
 
 实现IteratorAggregate接口
+
 ```php
 /**
  * Returns an iterator for traversing the attributes in the model.

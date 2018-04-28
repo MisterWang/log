@@ -1,7 +1,8 @@
 ---
 title: PHPUnit中打印变量
 categories: 
-- php/PHPUnit
+- php
+- PHPUnit
 tags:
 - php
 - PHPUnit

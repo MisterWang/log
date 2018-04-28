@@ -1,3 +1,14 @@
+---
+title: php unpack
+categories: 
+- php
+- functions
+tags:
+- php
+layout: post
+---
+
+
 # unpack
 
 ## pack 

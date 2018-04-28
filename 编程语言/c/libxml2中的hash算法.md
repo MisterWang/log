@@ -1,3 +1,13 @@
+---
+title: libxml2的hash算法
+categories: 
+- c
+- libxml2
+tags:
+- libxml2
+layout: post
+---
+
 ```c
 unsigned long has_code(char* name){
   unsigned long value = 0L;
